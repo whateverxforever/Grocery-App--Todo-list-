@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Grocery List To-Do App!
+## Description
+![](https://raw.githubusercontent.com/whateverxforever/Grocery-App--Todo-list-/master/public/screenshot.PNG)
+This repository contains a single page **REACT** grocery list application. In this application the user can add all the grocery items in a to-do fashion and then can later mark them complete by clicking on the grocery once the job is done. 
 
-## Available Scripts
+User is also provided with a filter function, using which he can filter out the remaining groceries based on whether they are already bought or not.
 
-In the project directory, you can run:
+The user can delete added items by clicking on the delete button adjacent to the said item. When an item as marked as complete by clicking on it, the items color changes to red and a line is striked through the item. You can toggle between marked and unmarked by clicking on the item again.
 
-### `npm start`
+Based on the items left unmarked in the list, there is counter to the right which changes its color based on the ratio of items left / total items indicating the progress from red->yellow->green. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Installation
+If you don't feel like manually installing the app you can check out the app at [grocery app heroku](https://grocery-todo.herokuapp.com/) else follow the below steps:
+- Clone the repo in your terminal by clicking the _green_ clone or download button at the top right and copy in the url
+- In your terminal, type ```git clone URL```
+  - replace URL with the url you copied
+  - hit enter
+- This will copy all the files from this repo down to your computer
+- In your terminal, cd into the directory you just created
+- Type ```npm install``` to install all dependencies
+- Last, but not least, type ```npm start``` to run the app locally.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To look at the code, just open up the project in your favorite code editor!
+## Folder Structure
 
-### `npm run build`
+After creation, your project should look like this:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+grocery-app/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+    lol2.png
+    manifest.json
+    robots.txt
+    screenshot.png
+  src/
+    components/
+        GroceryItem/
+	    GroceryItem.js
+	    package.json
+	    style.css
+	GroceryList/
+	    GroceryList.js
+	    package.json
+	    style.css  
+	InputForm/
+	    InputForm.js
+	    package.json
+	    style.css
+	ProgressBar/
+	    ProgressBar.js
+	    package.json
+	    style.css  
+	ToggleButtons/
+	    ToggleButtons.js
+	    package.json
+	    style.css            
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Components 
+### Grocery Item 
+It is a class component and is being used to display a particular item, and the action of toggling and deleting them
+### Grocery List
+Grocery List is a functional component and take cares of the list as a whole, *Grocery Item* is an iterative child for it.
+### Input Form
+Input form is a functional component and uses **useState** hook for maintaining its state. It is responsible for getting the input from the user and then storing it in the main state.
+### Progress Bar
+Progress bar is again a functional component and is responsible for showing the user, the items left to buy in the list
+### Toggle Buttons
+Toggle Buttons is a functional component and are used to filter the list based on the 3 available criteria : **All**,**Active**,**Completed**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
