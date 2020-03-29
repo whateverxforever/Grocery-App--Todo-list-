@@ -1,0 +1,31 @@
+.item-form {
+    padding: 5vh
+}
+
+.item-form input[type="text"] {
+    border: none;
+    border-bottom: solid black 1px;
+    background: transparent;
+    color: rgb(99, 98, 98);
+    margin-right: 2vw;
+    padding: 10px;
+}
+
+.item-form input[type="text"]:hover {
+    border-bottom: solid black 2px;
+    color: black;
+}
+
+.item-form button {
+    background: transparent;
+    border-radius: 5px;
+    padding: 8px;
+    color: #fe346e;
+    border: solid #fe346e;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.item-form button:hover {
+    color: white;
+    box-shadow: 0 0 40px 40px #fe346e inset;
+}

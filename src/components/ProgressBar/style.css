@@ -1,0 +1,21 @@
+.progress-area {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.progress-count {
+    margin-top: 10vh;
+    font-size: 74px;
+}
+
+.p-red {
+    color: #fe346e;
+}
+
+.p-yellow {
+    color: orange;
+}
+
+.p-green {
+    color: rgb(31, 190, 151);
+}

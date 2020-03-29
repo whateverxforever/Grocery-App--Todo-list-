@@ -1,0 +1,19 @@
+.button-area {
+    height: 50vh;
+    padding: 20px;
+}
+
+.button-area button {
+    width: 10vw;
+    padding: 1vw;
+    display: block;
+    border: none;
+}
+
+.button-area button:hover {
+    background-color: rgb(31, 190, 151);
+}
+
+.active-btn {
+    background: aquamarine;
+}
